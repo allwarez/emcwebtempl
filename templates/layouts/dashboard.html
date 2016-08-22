@@ -58,6 +58,12 @@
                         <span class="nav-label">EmerCoin Pool</span>
                     </a>
                 </li>
+                <li>
+                    <a href="https://hashmachines.com" target="_blank">
+                        <i class="fa fa-external-link"></i>
+                        <span class="nav-label">HashMachines</span>
+                    </a>
+                </li>
                 {% if login_btn == 1 %}
                 <li>
                     <a href="logout">
@@ -93,17 +99,11 @@
                     {% endfor %}
                 {% endif %}
             {% endwith %}
-            <div id="cgminer" style="display: none;">
-                <div class="jumbotron text-center">
-                    <p class="text-center">Cgminer is offline</p>
-                    <p><a class="btn btn-primary btn-lg turn-on" href="#" role="button" data-loading-text="Wait...">Turn it on</a></p>
-                </div>
-            </div>
             {% block content %}{% endblock %}
         </div>
         <div class="footer">
             <div class="pull-right">
-                v1.03.01
+                v1.03.1 / WV: {{ info['version'] }}
             </div>
             <div>
                 <strong>&copy; HashMachines</strong> 2016

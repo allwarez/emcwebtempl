@@ -12,13 +12,13 @@
 </head>
 
 <body class="vps">
-    <div class="middle-box text-center loginscreen  animated fadeInDown">
+    <div class="middle-box text-center loginscreen">
         <div class="pt">
             <img class="loginlogo img-responsive" alt="" src="{{ url_for('static', filename='img/biglogolinux.png') }}">
             <p>&nbsp;</p>
-            <a href="{{ url_for('wallet') }}" class="btn btn-primary">Login via SSL</a>
+            <a href="{{ url_for('wallet') }}" class="btn btn-warning">Login via SSL</a>
             <p>or</p>
-            <button class="btn btn-primary" data-toggle="modal" data-target="#login_dialog">Login via Login/Password</button>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#login_dialog">Login via Login/Password</button>
         </div>
     </div>
 
